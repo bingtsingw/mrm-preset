@@ -1,0 +1,19 @@
+{
+  "name": "@bingtsingw/mrm-preset",
+  "version": "0.0.0-development",
+  "description": "Common tasks for Mrm",
+  "main": "config.json",
+  "keywords": [
+    "mrm",
+    "mrm-task",
+    "mrm-preset"
+  ],
+  "author": {
+    "name": "bingtsingw",
+    "url": "https://github.com/bingtsingw"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mrm-core": "^7.0.0"
+  }
+}
