@@ -15,5 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "mrm-core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.0",
+    "release-it": "^15.3.0"
   }
 }
