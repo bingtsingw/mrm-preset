@@ -8,6 +8,9 @@
     "mrm-task",
     "mrm-preset"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "bingtsingw",
     "url": "https://github.com/bingtsingw"
