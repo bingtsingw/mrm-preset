@@ -20,7 +20,9 @@
     "mrm-core": "^7.0.0"
   },
   "devDependencies": {
+    "@bingtsingw/mrm-preset": "^0.0.0",
     "@release-it/conventional-changelog": "^5.1.0",
+    "mrm": "^4.0.0",
     "release-it": "^15.3.0"
   }
 }
