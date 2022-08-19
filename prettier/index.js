@@ -1,90 +1,93 @@
-const {
-  install,
-  packageJson,
-  lines,
-  json,
-  deleteFiles
-} = require('mrm-core')
+const { install, packageJson, lines, json, deleteFiles } = require('mrm-core');
 
-const isTs = !!packageJson().get('devDependencies.typescript')
+const isTs = !!packageJson().get('devDependencies.typescript');
 
 const task = () => {
-  deleteFiles(['.prettierrc', '.prettierrc.json', '.prettierrc.yml', '.prettierrc.yaml', '.prettierrc.json5', '.prettierrc.js', '.prettierrc.cjs', 'prettier.config.js', 'prettier.config.cjs'])
-  deleteFiles(['.prettierignore'])
+  deleteFiles([
+    '.prettierrc',
+    '.prettierrc.json',
+    '.prettierrc.yml',
+    '.prettierrc.yaml',
+    '.prettierrc.json5',
+    '.prettierrc.js',
+    '.prettierrc.cjs',
+    'prettier.config.js',
+    'prettier.config.cjs',
+  ]);
+  deleteFiles(['.prettierignore']);
 
   /**
    * Add .prettierrc.json file
    */
-  const prettierrc = json('.prettierrc.json')
+  const prettierrc = json('.prettierrc.json');
   prettierrc.merge({
-    "printWidth": 120,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "proseWrap": "never",
-  })
+    printWidth: 120,
+    singleQuote: true,
+    trailingComma: 'all',
+    proseWrap: 'never',
+  });
   if (isTs) {
     prettierrc.merge({
-      plugins: ['prettier-plugin-organize-imports']
-    })
+      plugins: ['prettier-plugin-organize-imports'],
+    });
   }
   prettierrc.save();
 
   /**
    * Add .prettierignore file
    */
-  const prettierIgnore = lines('.prettierignore')
-  prettierIgnore.add('# misc')
-  prettierIgnore.add('.DS_Store')
-  prettierIgnore.add('.eslintcache')
-  prettierIgnore.add('yarn.lock')
-  prettierIgnore.add('pnpm-lock.yaml')
-  prettierIgnore.add('package-lock.json')
-  prettierIgnore.add('node_modules')
-  prettierIgnore.add('.husky')
+  const prettierIgnore = lines('.prettierignore');
+  prettierIgnore.add('# misc');
+  prettierIgnore.add('.DS_Store');
+  prettierIgnore.add('.eslintcache');
+  prettierIgnore.add('yarn.lock');
+  prettierIgnore.add('pnpm-lock.yaml');
+  prettierIgnore.add('package-lock.json');
+  prettierIgnore.add('node_modules');
+  prettierIgnore.add('.husky');
 
-  prettierIgnore.add('\n# ignored suffix')
-  prettierIgnore.add('*.log')
-  prettierIgnore.add('*.ico')
-  prettierIgnore.add('*.svg')
-  prettierIgnore.add('*.png')
-  prettierIgnore.add('*ignore')
-  prettierIgnore.add('.editorconfig')
+  prettierIgnore.add('\n# ignored suffix');
+  prettierIgnore.add('*.log');
+  prettierIgnore.add('*.ico');
+  prettierIgnore.add('*.svg');
+  prettierIgnore.add('*.png');
+  prettierIgnore.add('*ignore');
+  prettierIgnore.add('.editorconfig');
 
-  prettierIgnore.add('\n# ignore artifacts')
-  prettierIgnore.add('build')
-  prettierIgnore.add('coverage')
-  prettierIgnore.add('dist')
-  prettierIgnore.add('.umi')
-  prettierIgnore.add('.umi-test')
-  prettierIgnore.add('.umi-production')
+  prettierIgnore.add('\n# ignore artifacts');
+  prettierIgnore.add('build');
+  prettierIgnore.add('coverage');
+  prettierIgnore.add('dist');
+  prettierIgnore.add('.umi');
+  prettierIgnore.add('.umi-test');
+  prettierIgnore.add('.umi-production');
 
-  prettierIgnore.add('\n# project')
-  prettierIgnore.add('src/components/iconfont')
-  prettierIgnore.save()
+  prettierIgnore.add('\n# project');
+  prettierIgnore.add('src/components/iconfont');
+  prettierIgnore.save();
 
   /**
    * Update vscode settings
    */
-  json('.vscode/settings.json').merge({
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }).save();
+  json('.vscode/settings.json')
+    .merge({
+      'editor.defaultFormatter': 'esbenp.prettier-vscode',
+    })
+    .save();
 
   /**
    * Update package file
    */
-  packageJson()
-  .setScript('format', 'prettier --check .')
-  .setScript('format:fix', 'prettier --write .')
-  .save()
+  packageJson().setScript('format', 'prettier --check .').setScript('format:fix', 'prettier --write .').save();
 
   /**
    * Install required dependencies
    */
-  install(['prettier'])
+  install(['prettier']);
   if (isTs) {
-    install(['prettier-plugin-organize-imports'])
+    install(['prettier-plugin-organize-imports']);
   }
-}
+};
 
-task.description = 'Add prettier'
-module.exports = task
+task.description = 'Add prettier';
+module.exports = task;

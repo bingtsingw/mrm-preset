@@ -17,13 +17,14 @@ const task = () => {
     })
     .save();
 
-
-  json('.vscode/settings.json').merge({
-        "typescript.tsdk": "./node_modules/typescript/lib"
-  }).save();
+  json('.vscode/settings.json')
+    .merge({
+      'typescript.tsdk': './node_modules/typescript/lib',
+    })
+    .save();
 
   install(['typescript', '@types/node']);
-}
+};
 
-module.exports.description = 'Add TypeScript'
+module.exports.description = 'Add TypeScript';
 module.exports = task;
