@@ -40,3 +40,13 @@ Create a `.vscode/settings.json` file to set basic editor settings.
 ```bash
 $ nr mrm vscode
 ```
+
+### Typescript
+
+1. Create `tsconfig.json`
+2. Update `.vscode/settings.json` to support typescript
+3. install `typescript`, `@types/node`
+
+```bash
+$ nr mrm typescript
+```
