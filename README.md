@@ -50,3 +50,12 @@ $ nr mrm vscode
 ```bash
 $ nr mrm typescript
 ```
+
+### Prettier
+
+1. Remove all prettier config files
+2. Add `.prettierrc.json` and `.prettierignore` file
+3. Update `.vscode/settings.json` settings
+4. Add `package.json` scripts
+5. install `prettier`
+   1. install `prettier-plugin-organize-imports` if in a typescript project
