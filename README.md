@@ -32,3 +32,11 @@ Add script to package.json file
 ```bash
 $ nr mrm editorconfig
 ```
+
+### VSCode
+
+Create a `.vscode/settings.json` file to set basic editor settings.
+
+```bash
+$ nr mrm vscode
+```
