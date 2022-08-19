@@ -1,19 +1,21 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bingtsingw/mrm-preset': ^0.0.0
+  '@bingtsingw/mrm-preset': ^0.1.0
   '@release-it/conventional-changelog': ^5.1.0
   mrm: ^4.0.0
   mrm-core: ^7.0.0
+  prettier: ^2.7.1
   release-it: ^15.3.0
 
 dependencies:
   mrm-core: 7.0.0
 
 devDependencies:
-  '@bingtsingw/mrm-preset': 0.0.0
+  '@bingtsingw/mrm-preset': 0.1.0
   '@release-it/conventional-changelog': 5.1.0_release-it@15.3.0
   mrm: 4.0.0
+  prettier: 2.7.1
   release-it: 15.3.0
 
 packages:
@@ -39,8 +41,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@bingtsingw/mrm-preset/0.0.0:
-    resolution: {integrity: sha512-STtcNYA8z88RnIdnB1+y8Xkb1IXxOa8f0skHLlAHfSGhOyZ4G4k8cI8A1y7f/w1pkIV/qdtQc7j8HKBd329qZg==}
+  /@bingtsingw/mrm-preset/0.1.0:
+    resolution: {integrity: sha512-AUU6/vI3SAzMPrwujcWezRQoyknA97UDBbj+Ea4n3FQaN9UaNaDwDiJwbTQH99l9dSIzOqr3DBcIoTnnjh2o2w==}
     dependencies:
       mrm-core: 7.0.0
     dev: true
@@ -3261,6 +3263,12 @@ packages:
   /prepend-http/2.0.0:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /process-nextick-args/2.0.1:
