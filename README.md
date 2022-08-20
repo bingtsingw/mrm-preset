@@ -49,6 +49,15 @@ $ nr mrm vscode
 $ nr mrm husky
 ```
 
+### Lint-Staged
+
+1. Remove all `.lintstaged` configs
+2. Add `lint-staged` package and add husky `pre-commit` hook
+
+```bash
+$ nr mrm lint-staged
+```
+
 ### Commitizen
 
 1. Remove all `commitizen` configs

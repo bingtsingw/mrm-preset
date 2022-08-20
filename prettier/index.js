@@ -1,5 +1,5 @@
 const { install, packageJson, lines, json, deleteFiles } = require('mrm-core');
-const { cosmiconfig, hasTypescript } = require('../utils');
+const { cosmiconfig, hasTypescript, hasLintStaged } = require('../utils');
 
 const task = () => {
   deleteFiles(cosmiconfig('prettier'));
@@ -75,6 +75,16 @@ const task = () => {
   install(['prettier']);
   if (hasTypescript) {
     install(['prettier-plugin-organize-imports']);
+  }
+
+  if (hasLintStaged) {
+    packageJson()
+      .merge({
+        'lint-staged': {
+          '**/*.{js,ts,html,css,md,json}': 'prettier --check',
+        },
+      })
+      .save();
   }
 };
 
