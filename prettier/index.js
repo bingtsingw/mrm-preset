@@ -1,6 +1,6 @@
 const { install, packageJson, lines, json, deleteFiles } = require('mrm-core');
 
-const isTs = !!packageJson().get('devDependencies.typescript');
+const hasTypescript = !!packageJson().get('devDependencies.typescript');
 
 const task = () => {
   deleteFiles([
@@ -26,7 +26,7 @@ const task = () => {
     trailingComma: 'all',
     proseWrap: 'never',
   });
-  if (isTs) {
+  if (hasTypescript) {
     prettierrc.merge({
       plugins: ['prettier-plugin-organize-imports'],
     });
@@ -84,7 +84,7 @@ const task = () => {
    * Install required dependencies
    */
   install(['prettier']);
-  if (isTs) {
+  if (hasTypescript) {
     install(['prettier-plugin-organize-imports']);
   }
 };

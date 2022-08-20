@@ -7,7 +7,7 @@ const task = async () => {
 
   packageJson().setScript('prepare', "if [ -d './node_modules/husky' ]; then husky install; fi").save();
   install(['husky']);
-  await execa('npx husky install');
+  await execa('npx husky install', { shell: true });
 };
 
 task.description = 'Add husky';

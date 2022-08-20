@@ -2,10 +2,9 @@
 
 # @bingtsingw/mrm-preset
 
-[mrm](https://github.com/sapegin/mrm) preset to keep configuration files in-sync and consistent across various projects.  
-Inspired by [mrm-preset-default](https://github.com/sapegin/mrm/tree/master/packages/mrm-preset-default) and [@adonisjs/mrm-preset](https://github.com/adonisjs/mrm-preset)
+[mrm](https://github.com/sapegin/mrm) preset to keep configuration files in-sync and consistent across various projects. Highly inspired by [mrm-preset-default](https://github.com/sapegin/mrm/tree/master/packages/mrm-preset-default) and [@adonisjs/mrm-preset](https://github.com/adonisjs/mrm-preset).
 
-> :warning: I use [@antfu/ni](https://github.com/antfu/ni) in this readme file to install npm packages.
+> :warning: This documentation uses [@antfu/ni](https://github.com/antfu/ni) for npm operations.
 
 ## Usage
 
@@ -50,6 +49,16 @@ $ nr mrm vscode
 $ nr mrm husky
 ```
 
+### Commitizen
+
+1. Remove all `commitizen` configs
+2. Add `commitizen` packages and configs
+3. Install husky hook if exists
+
+```bash
+$ nr mrm commitizen
+```
+
 ### Typescript
 
 1. Create `tsconfig.json`
@@ -68,3 +77,7 @@ $ nr mrm typescript
 4. Add `package.json` scripts
 5. install `prettier`
    1. install `prettier-plugin-organize-imports` if in a typescript project
+
+```bash
+$ nr mrm prettier
+```
