@@ -4,6 +4,8 @@
 
 [mrm](https://github.com/sapegin/mrm) preset to keep configuration files in-sync and consistent across various projects. Highly inspired by [mrm-preset-default](https://github.com/sapegin/mrm/tree/master/packages/mrm-preset-default) and [@adonisjs/mrm-preset](https://github.com/adonisjs/mrm-preset).
 
+> :white_check_mark: This project is configured by itself.
+
 > :warning: This documentation uses [@antfu/ni](https://github.com/antfu/ni) for npm operations.
 
 ## Usage
@@ -89,4 +91,13 @@ $ nr mrm typescript
 
 ```bash
 $ nr mrm prettier
+```
+
+### Prisma
+
+1. Add `prisma` package and script
+2. Init `prisma` and add `diff.sh`
+
+```bash
+$ nr mrm prisma
 ```
