@@ -2,6 +2,8 @@ const { install, packageJson, deleteFiles, lines } = require('mrm-core');
 const { cosmiconfig, hasHusky, removeMatch } = require('../utils');
 
 const task = async () => {
+  const { execa } = await import('execa');
+
   deleteFiles(cosmiconfig('commitlint'));
   deleteFiles(['.czrc']);
 
@@ -15,8 +17,11 @@ const task = async () => {
 
   if (hasHusky) {
     const commitMsg = '.husky/commit-msg';
+
+    await execa(`npx husky add ${commitMsg}`, { shell: true });
+
     lines(commitMsg)
-      .set(removeMatch(lines(commitMsg).get(), /commitlint/))
+      .set(removeMatch(lines(commitMsg).get(), /commitlint|undefined/))
       .add('npx --no -- commitlint --edit $1')
       .save();
   }
