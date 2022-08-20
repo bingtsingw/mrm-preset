@@ -1,5 +1,12 @@
 
 
+## [0.2.1](https://github.com/bingtsingw/mrm-preset/compare/0.2.0...0.2.1) (2022-08-20)
+
+
+### Bug Fixes
+
+* util has-series variable error ([bcbdee9](https://github.com/bingtsingw/mrm-preset/commit/bcbdee974af51c3c80a59e630f31ce700dbbffb8))
+
 ## [0.2.0](https://github.com/bingtsingw/mrm-preset/compare/0.1.0...0.2.0) (2022-08-20)
 
 
