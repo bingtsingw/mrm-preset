@@ -44,6 +44,7 @@ const task = () => {
   prettierIgnore.add('.editorconfig');
 
   prettierIgnore.add('\n# ignore artifacts');
+  prettierIgnore.add('CHANGELOG.md');
   prettierIgnore.add('build');
   prettierIgnore.add('coverage');
   prettierIgnore.add('dist');

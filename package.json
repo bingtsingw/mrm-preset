@@ -21,8 +21,14 @@
     "mrm-core": "^7.0.0"
   },
   "devDependencies": {
-    "@bingtsingw/mrm-preset": "^0.1.0",
+    "@bingtsingw/mrm-preset": "^0.2.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@release-it/conventional-changelog": "^5.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "mrm": "^4.0.0",
     "prettier": "^2.7.1",
     "release-it": "^15.3.0"
@@ -30,6 +36,21 @@
   "scripts": {
     "mrm": "mrm --preset=@bingtsingw/mrm-preset",
     "format": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
+    "commit": "cz"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,html,css,md,json}": "prettier --check"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

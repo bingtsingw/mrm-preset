@@ -16,6 +16,7 @@ node_modules
 .editorconfig
 
 # ignore artifacts
+CHANGELOG.md
 build
 coverage
 dist
