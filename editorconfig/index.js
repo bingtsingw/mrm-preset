@@ -24,4 +24,4 @@ module.exports = function task() {
     .save();
 };
 
-module.exports.description = 'Add EditorConfig';
+module.exports.description = 'Add editorconfig';

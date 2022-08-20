@@ -1,25 +1,8 @@
 const { install, packageJson, deleteFiles, lines } = require('mrm-core');
-
-const hasHusky = !!packageJson().get('devDependencies.husky');
-
-const removeMatch = (lines, match) => {
-  lines = lines.filter((value) => !value.match(match));
-  return lines;
-};
+const { cosmiconfig, hasHusky, removeMatch } = require('../utils');
 
 const task = async () => {
-  deleteFiles([
-    '.commitlintrc',
-    '.commitlintrc.json',
-    '.commitlintrc.yaml',
-    '.commitlintrc.yml',
-    '.commitlintrc.js',
-    '.commitlintrc.cjs',
-    '.commitlintrc.ts',
-    'commitlint.config.js',
-    'commitlint.config.cjs',
-    'commitlint.config.ts',
-  ]);
+  deleteFiles(cosmiconfig('commitlint'));
   deleteFiles(['.czrc']);
 
   install(['commitizen', 'cz-conventional-changelog']);

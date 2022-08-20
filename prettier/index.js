@@ -1,19 +1,8 @@
 const { install, packageJson, lines, json, deleteFiles } = require('mrm-core');
-
-const hasTypescript = !!packageJson().get('devDependencies.typescript');
+const { cosmiconfig, hasTypescript } = require('../utils');
 
 const task = () => {
-  deleteFiles([
-    '.prettierrc',
-    '.prettierrc.json',
-    '.prettierrc.yml',
-    '.prettierrc.yaml',
-    '.prettierrc.json5',
-    '.prettierrc.js',
-    '.prettierrc.cjs',
-    'prettier.config.js',
-    'prettier.config.cjs',
-  ]);
+  deleteFiles(cosmiconfig('prettier'));
   deleteFiles(['.prettierignore']);
 
   /**
