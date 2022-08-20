@@ -41,6 +41,15 @@ Create a `.vscode/settings.json` file to set basic editor settings.
 $ nr mrm vscode
 ```
 
+### Husky
+
+1. Remove current `.husky` folder
+2. Add `husky` package and run `npx husky install`
+
+```bash
+$ nr mrm husky
+```
+
 ### Typescript
 
 1. Create `tsconfig.json`
