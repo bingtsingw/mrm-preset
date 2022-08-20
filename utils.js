@@ -26,11 +26,11 @@ const cosmiconfig = (name) => {
   return configs;
 };
 
-const hasHusky = packageJson().exists('devDependencies.husky');
+const hasHusky = !!packageJson().get('devDependencies.husky');
 
-const hasTypescript = packageJson().exists('devDependencies.typescript');
+const hasTypescript = !!packageJson().get('devDependencies.typescript');
 
-const hasLintStaged = packageJson().exists('lint-staged');
+const hasLintStaged = !!packageJson().get('devDependencies.lint-staged');
 
 module.exports.removeMatch = removeMatch;
 module.exports.cosmiconfig = cosmiconfig;
