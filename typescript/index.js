@@ -26,5 +26,5 @@ const task = () => {
   install(['typescript', '@types/node']);
 };
 
-module.exports.description = 'Add TypeScript';
+task.description = 'Add typescript';
 module.exports = task;

@@ -12,5 +12,5 @@ const task = () => {
     .save();
 };
 
-module.exports.description = 'Add VSCode settings';
+task.description = 'Add vscode settings';
 module.exports = task;
