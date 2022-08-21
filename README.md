@@ -42,6 +42,16 @@ $ nr mrm editorconfig
 $ nr mrm gitignore
 ```
 
+### Release-it
+
+1. Add `.release-it.json`
+2. Add `release` npm scripts
+3. Add `release-it` and `@release-it/conventional-changelog`
+
+```bash
+$ nr mrm release-it
+```
+
 ### VSCode
 
 Create a `.vscode/settings.json` file to set basic editor settings.
