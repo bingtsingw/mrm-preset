@@ -26,6 +26,14 @@ Add script to package.json file
 
 ## Tasks
 
+### MIT License
+
+**Re-Create** `LICENSE` file inside the project root.
+
+```bash
+$ nr mrm mit
+```
+
 ### Editorconfig
 
 **Remove** and **Re-Create** a `.editorconfig` file inside the project root.

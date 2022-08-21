@@ -7,5 +7,5 @@ const task = () => {
   template(gitignore, join(__dirname, '../templates/gitignore/gitignore')).apply().save();
 };
 
-task.description = 'Add .gitignore';
+task.description = 'Add gitignore';
 module.exports = task;

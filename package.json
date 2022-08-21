@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "execa": "^6.1.0",
+    "git-user-name": "^2.0.0",
     "mrm-core": "^7.0.0"
   },
   "devDependencies": {
