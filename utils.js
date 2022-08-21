@@ -28,6 +28,8 @@ const cosmiconfig = (name) => {
 
 const hasHusky = !!packageJson().get('devDependencies.husky');
 
+const hasPrettier = !!packageJson().get('devDependencies.prettier');
+
 const hasTypescript = !!packageJson().get('devDependencies.typescript');
 
 const hasLintStaged = !!packageJson().get('devDependencies.lint-staged');
@@ -35,5 +37,6 @@ const hasLintStaged = !!packageJson().get('devDependencies.lint-staged');
 module.exports.removeMatch = removeMatch;
 module.exports.cosmiconfig = cosmiconfig;
 module.exports.hasHusky = hasHusky;
+module.exports.hasPrettier = hasPrettier;
 module.exports.hasTypescript = hasTypescript;
 module.exports.hasLintStaged = hasLintStaged;
