@@ -34,6 +34,14 @@ Add script to package.json file
 $ nr mrm editorconfig
 ```
 
+### Git Ignore
+
+**Re-Create** `.gitignore` file inside the project root.
+
+```bash
+$ nr mrm gitignore
+```
+
 ### VSCode
 
 Create a `.vscode/settings.json` file to set basic editor settings.
