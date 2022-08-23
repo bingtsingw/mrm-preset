@@ -1,5 +1,23 @@
 
 
+## [0.4.0](https://github.com/bingtsingw/mrm-preset/compare/0.3.0...0.4.0) (2022-08-23)
+
+
+### Features
+
+* add alias config ([ff5d33b](https://github.com/bingtsingw/mrm-preset/commit/ff5d33b5b69bb19dc056df02f378252ca9288ad4))
+* add task: eslint ([ac27779](https://github.com/bingtsingw/mrm-preset/commit/ac2777989b6627056becde3f02ec3bfb6dd1158f))
+
+
+### Chores
+
+* upgrade @bingtsingw/mrm-preset and configures ([0d1045d](https://github.com/bingtsingw/mrm-preset/commit/0d1045dabc8898f46589299fd3025910ee392ca4))
+
+
+### Code Refactoring
+
+* refactor prettier task ([34daea1](https://github.com/bingtsingw/mrm-preset/commit/34daea1aaeac6bd550fb6d762ebd3ebaf69beff0))
+
 ## [0.3.0](https://github.com/bingtsingw/mrm-preset/compare/0.2.1...0.3.0) (2022-08-23)
 
 
