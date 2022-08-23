@@ -1,4 +1,4 @@
-const { template } = require('mrm-core');
+const { template, packageJson } = require('mrm-core');
 const { join } = require('path');
 const gitUserName = require('git-user-name');
 
@@ -10,6 +10,8 @@ const task = () => {
       fullname: gitUserName(),
     })
     .save();
+
+  packageJson().set('license', 'MIT').save();
 };
 
 task.description = 'Add MIT License';
