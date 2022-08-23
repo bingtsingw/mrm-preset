@@ -4,8 +4,7 @@ const { join } = require('path');
 
 const task = () => {
   deleteFiles(cosmiconfig('eslint'));
-
-  template('.eslintignore', join(__dirname, '../templates/eslint/eslintignore')).apply().save();
+  deleteFiles('.eslintignore');
 
   json('.vscode/settings.json')
     .merge({
@@ -19,6 +18,7 @@ const task = () => {
   packageJson()
     .setScript('lint:js', 'eslint . --cache --ext .js,.jsx,.ts,.tsx')
     .setScript('lint:js:fix', 'eslint . --cache --ext .js,.jsx,.ts,.tsx --fix')
+    .merge({ eslintIgnore: ['dist', 'build'] })
     .save();
 
   if (hasLintStaged) {
