@@ -1,6 +1,6 @@
 const { ini, deleteFiles } = require('mrm-core');
 
-module.exports = function task() {
+const task = () => {
   deleteFiles('.editorconfig');
 
   ini('.editorconfig', 'http://editorconfig.org')
@@ -24,4 +24,5 @@ module.exports = function task() {
     .save();
 };
 
-module.exports.description = 'Add editorconfig';
+task.description = 'Add editorconfig';
+module.exports = task;
