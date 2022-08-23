@@ -1,6 +1,5 @@
 {
   "aliases": {
-    "alias-base": ["editorconfig", "gitignore", "vscode", "husky", "lint-staged", "commitizen", "prettier", "eslint"],
     "alias-adonis": [
       "editorconfig",
       "gitignore",
@@ -10,7 +9,9 @@
       "commitizen",
       "prettier",
       "eslint",
-      "prisma"
-    ]
+      "prisma",
+      "adonis"
+    ],
+    "alias-base": ["editorconfig", "gitignore", "vscode", "husky", "lint-staged", "commitizen", "prettier", "eslint"]
   }
 }
