@@ -22,7 +22,7 @@
     "mrm-core": "^7.0.0"
   },
   "devDependencies": {
-    "@bingtsingw/mrm-preset": "^0.2.1",
+    "@bingtsingw/mrm-preset": "^0.3.0",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@release-it/conventional-changelog": "^5.1.0",
@@ -39,7 +39,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "release-it"
   },
   "lint-staged": {
     "**/*.{js,ts,html,css,md,json}": "prettier --check"
