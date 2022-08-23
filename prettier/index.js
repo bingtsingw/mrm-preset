@@ -1,5 +1,5 @@
 const { install, packageJson, lines, json, deleteFiles, template } = require('mrm-core');
-const { cosmiconfig, hasTypescript, hasLintStaged } = require('../utils');
+const { cosmiconfig, hasTypescript, hasLintStaged, prettierConfig } = require('../utils');
 const { join } = require('path');
 
 const task = () => {
@@ -22,22 +22,21 @@ const task = () => {
       .save();
   }
 
-  const prettierrc = json('.prettierrc.json');
-  prettierrc.merge({
-    printWidth: 120,
-    singleQuote: true,
-    trailingComma: 'all',
-    proseWrap: 'never',
-  });
+  prettierConfig()
+    .set({
+      printWidth: 120,
+      singleQuote: true,
+      trailingComma: 'all',
+      proseWrap: 'never',
+    })
+    .save();
 
   if (hasTypescript) {
     install(['prettier-plugin-organize-imports']);
-    prettierrc.merge({
-      plugins: ['prettier-plugin-organize-imports'],
-    });
+    prettierConfig()
+      .merge({ plugins: ['prettier-plugin-organize-imports'] })
+      .save();
   }
-
-  prettierrc.save();
 };
 
 task.description = 'Add prettier';

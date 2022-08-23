@@ -1,7 +1,7 @@
 const { chmodSync, existsSync } = require('fs');
 const { install, packageJson, template, json } = require('mrm-core');
 const { join } = require('path');
-const { hasPrettier } = require('../utils');
+const { hasPrettier, prettierConfig } = require('../utils');
 
 const task = async () => {
   const { execa } = await import('execa');
@@ -32,10 +32,8 @@ const task = async () => {
 
   if (hasPrettier) {
     install(['prettier-plugin-prisma']);
-    json('.prettierrc.json')
-      .merge({
-        plugins: ['prettier-plugin-prisma'],
-      })
+    prettierConfig()
+      .merge({ plugins: ['prettier-plugin-prisma'] })
       .save();
   }
 };
