@@ -1,5 +1,31 @@
 
 
+## [0.3.0](https://github.com/bingtsingw/mrm-preset/compare/0.2.1...0.3.0) (2022-08-23)
+
+
+### Features
+
+* add task: gitignore ([0aeeeb6](https://github.com/bingtsingw/mrm-preset/commit/0aeeeb68f80690c9c9142d2d9243c24aec4aa809))
+* add task: mit ([a62be30](https://github.com/bingtsingw/mrm-preset/commit/a62be3043b5bd6e8872eaef254952af42487aab5))
+* add task: prisma ([ea213c7](https://github.com/bingtsingw/mrm-preset/commit/ea213c74fb5c56ca9bf3a2da9807875eef95e3f2))
+* add task: release-it ([d6cc4bb](https://github.com/bingtsingw/mrm-preset/commit/d6cc4bb8b8f957bf85e26d7135f3341c193124f4))
+* prisma task support vscode and prettier ([aef4c2d](https://github.com/bingtsingw/mrm-preset/commit/aef4c2d16ce6d854e5a7a93066812ce68d72caf4))
+
+
+### Bug Fixes
+
+* mit task update package.json file ([ce705b5](https://github.com/bingtsingw/mrm-preset/commit/ce705b5a91d2fc51bf63586053563b813f0af4f9))
+
+
+### Chores
+
+* run mrm to configure ([44af4ec](https://github.com/bingtsingw/mrm-preset/commit/44af4eca9e68dbc1fa0f803418e849b0b770cbc1))
+
+
+### Code Refactoring
+
+* use template for .prettierignore ([6cc8cde](https://github.com/bingtsingw/mrm-preset/commit/6cc8cdecea336498929fbda49909f5558bbd07d0))
+
 ## [0.2.1](https://github.com/bingtsingw/mrm-preset/compare/0.2.0...0.2.1) (2022-08-20)
 
 
