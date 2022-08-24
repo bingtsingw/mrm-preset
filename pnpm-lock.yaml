@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bingtsingw/mrm-preset': ^0.3.0
+  '@bingtsingw/mrm-preset': ^0.4.0
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
   '@release-it/conventional-changelog': ^5.1.0
@@ -11,18 +11,18 @@ specifiers:
   git-user-name: ^2.0.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
-  mrm: ^4.0.0
-  mrm-core: ^7.0.0
+  mrm: ^4.1.0
+  mrm-core: ^7.1.0
   prettier: ^2.7.1
   release-it: ^15.3.0
 
 dependencies:
   execa: 6.1.0
   git-user-name: 2.0.0
-  mrm-core: 7.0.0
+  mrm-core: 7.1.0
 
 devDependencies:
-  '@bingtsingw/mrm-preset': 0.3.0
+  '@bingtsingw/mrm-preset': 0.4.0
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@release-it/conventional-changelog': 5.1.0_release-it@15.3.0
@@ -30,7 +30,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   husky: 8.0.1
   lint-staged: 13.0.3
-  mrm: 4.0.0
+  mrm: 4.1.0
   prettier: 2.7.1
   release-it: 15.3.0
 
@@ -57,12 +57,12 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@bingtsingw/mrm-preset/0.3.0:
-    resolution: {integrity: sha512-IqWNAifaewzPJzvhFuGwboUipu7PHZKwezgvogYA1dMkp99AOIaGF9TEyXZnZWfa86QO8Au6rdGsy5Azz5Xh9Q==}
+  /@bingtsingw/mrm-preset/0.4.0:
+    resolution: {integrity: sha512-/OnuPKTS0pmXHnlW4FqKrJnLfSueZzKh6oe+Dr7a45EuBFUrBojVJ9Z7aaoWrtbL5hg2zcruxDn9Hfy4LazdDQ==}
     dependencies:
       execa: 6.1.0
       git-user-name: 2.0.0
-      mrm-core: 7.0.0
+      mrm-core: 7.1.0
     dev: true
 
   /@commitlint/cli/17.0.3:
@@ -1331,8 +1331,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -3362,8 +3362,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /mrm-core/7.0.0:
-    resolution: {integrity: sha512-NB22azURu3CMDN/VWvC5QO5zAUECe0VIPr+QWft+dxeeSz/mbsNAXt4GxaepA1VUGrddPMUmQuWikFPoaPKMbw==}
+  /mrm-core/7.1.0:
+    resolution: {integrity: sha512-vVzPDkPI0WLYxXsJwvT+8XsV+q0Bv+ursVLWzEGet6Ve3l2VPcxHWIXnQyIu5PI3ZwQLwxcD0AwaiegzLhdR3g==}
     engines: {node: '>=10.13'}
     dependencies:
       babel-code-frame: 6.26.0
@@ -3387,8 +3387,8 @@ packages:
       webpack-merge: 4.2.2
       yaml: 2.1.1
 
-  /mrm/4.0.0:
-    resolution: {integrity: sha512-Iz5ZF1Iy4aU2o/pQDuadnyc+u6DtXIEhAaKYyLHT+leLjC/mz6p/Uf6V8x8ITyQwilM13HiNNsFfED/0MHkmPA==}
+  /mrm/4.1.0:
+    resolution: {integrity: sha512-4jyaFzXEPcYSoCrR8LfLgKMF7Ge3wkFxqJwZiEPj4uJYCxauU28tZT0FTT3s8rpEtzXphSB4hYJdfxr9Yda5CQ==}
     engines: {node: '>=10.13'}
     hasBin: true
     dependencies:
@@ -3403,7 +3403,7 @@ packages:
       longest: 2.0.1
       middleearth-names: 1.1.0
       minimist: 1.2.6
-      mrm-core: 7.0.0
+      mrm-core: 7.1.0
       semver-utils: 1.1.4
       update-notifier: 4.1.3
       user-home: 2.0.0

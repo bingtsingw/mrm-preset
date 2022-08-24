@@ -1,17 +1,6 @@
 {
   "aliases": {
-    "alias-adonis": [
-      "editorconfig",
-      "gitignore",
-      "vscode",
-      "husky",
-      "lint-staged",
-      "commitizen",
-      "prettier",
-      "eslint",
-      "prisma",
-      "adonis"
-    ],
+    "alias-adonis": ["alias-base", "prisma", "adonis"],
     "alias-base": ["editorconfig", "gitignore", "vscode", "husky", "lint-staged", "commitizen", "prettier", "eslint"]
   }
 }
