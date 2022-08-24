@@ -1,5 +1,21 @@
 
 
+## [0.5.0](https://github.com/bingtsingw/mrm-preset/compare/0.4.0...0.5.0) (2022-08-24)
+
+
+### Features
+
+* add task: adonis project ([8826a1b](https://github.com/bingtsingw/mrm-preset/commit/8826a1b4d25cb02dfd11bcdc985d3e351dbfe786))
+* move eslint config to package.json ([c8dbea1](https://github.com/bingtsingw/mrm-preset/commit/c8dbea1761cdcfa56ecc2f9a27933719e86fb74d))
+* move prettier config to package.json ([3d74ced](https://github.com/bingtsingw/mrm-preset/commit/3d74ced7be6b8a8de16185edb2c79cb06a2491d5))
+* update alias ([7fcb036](https://github.com/bingtsingw/mrm-preset/commit/7fcb0367ed40713504b3595773a5bbbcb183f8e5))
+
+
+### Code Refactoring
+
+* refactor editorconfig export ([ad5d0c9](https://github.com/bingtsingw/mrm-preset/commit/ad5d0c9ba4f73240ae28a1f5f80b47d9d6cfd79f))
+* support nest alias ([97e4ae3](https://github.com/bingtsingw/mrm-preset/commit/97e4ae38884c01099fca6aff93857a04992841d9))
+
 ## [0.4.0](https://github.com/bingtsingw/mrm-preset/compare/0.3.0...0.4.0) (2022-08-23)
 
 
