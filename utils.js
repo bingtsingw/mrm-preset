@@ -1,5 +1,9 @@
 const { packageJson } = require('mrm-core');
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 const removeMatch = (lines, match) => {
   lines = lines.filter((value) => !value.match(match));
   return lines;
@@ -44,10 +48,13 @@ const hasTypescript = !!packageJson().get('devDependencies.typescript');
 
 const hasLintStaged = !!packageJson().get('devDependencies.lint-staged');
 
-module.exports.removeMatch = removeMatch;
-module.exports.cosmiconfig = cosmiconfig;
-module.exports.prettierConfig = prettierConfig;
-module.exports.hasHusky = hasHusky;
-module.exports.hasPrettier = hasPrettier;
-module.exports.hasTypescript = hasTypescript;
-module.exports.hasLintStaged = hasLintStaged;
+module.exports = {
+  capitalizeFirstLetter,
+  removeMatch,
+  cosmiconfig,
+  prettierConfig,
+  hasHusky,
+  hasPrettier,
+  hasTypescript,
+  hasLintStaged,
+};
