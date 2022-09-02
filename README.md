@@ -50,6 +50,16 @@ $ nr mrm editorconfig
 $ nr mrm gitignore
 ```
 
+### Typescript
+
+1. Create `tsconfig.json` (**DO NOT** add any configuration)
+2. Update `.vscode/settings.json` to support typescript
+3. install `typescript`, `@types/node`
+
+```bash
+$ nr mrm typescript
+```
+
 ### Release-it
 
 1. Add `.release-it.json`
@@ -94,16 +104,6 @@ $ nr mrm lint-staged
 
 ```bash
 $ nr mrm commitizen
-```
-
-### Typescript
-
-1. Create `tsconfig.json`
-2. Update `.vscode/settings.json` to support typescript
-3. install `typescript`, `@types/node`
-
-```bash
-$ nr mrm typescript
 ```
 
 ### Prettier

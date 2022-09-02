@@ -15,7 +15,7 @@ const task = async () => {
     .save();
 
   if (!existsSync('prisma')) {
-    execa('npx prisma init');
+    await execa('npx prisma init', { shell: true });
   }
 
   const diff = 'prisma/diff.sh';

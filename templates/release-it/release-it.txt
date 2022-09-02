@@ -54,7 +54,7 @@
           },
           {
             "type": "revert",
-            "section": "⏪ Reverts | 回退"
+            "section": "Reverts"
           }
         ]
       }
