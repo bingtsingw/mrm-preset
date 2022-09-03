@@ -1,24 +1,37 @@
 # compiled output
-/dist
-/node_modules
-.eslintcache
-.build
+dist
 build
-coverage
+out
+deploy_versions
+node_modules
+.temp
+.rn_temp
+.eslintcache
+.stylelintcache
+.build
+.next
+.nuxt
+.malagu
+.cache
 
 # Logs
 logs
 *.log
-.pnpm-debug.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
 # OS
 .DS_Store
 
 # IDEs and editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 /.idea
 .project
 .classpath
@@ -27,12 +40,13 @@ lerna-debug.log*
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Tests
+/coverage
+/.nyc_output
 
-# project
+# dotenv
 .env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
