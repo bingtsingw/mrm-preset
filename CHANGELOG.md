@@ -1,5 +1,12 @@
 
 
+## [0.7.0](https://github.com/bingtsingw/mrm-preset/compare/0.6.0...0.7.0) (2022-09-03)
+
+
+### Features
+
+* add nextjs support ([66e1463](https://github.com/bingtsingw/mrm-preset/commit/66e14634d3a2867fcb6c46f483a2c77ae210b749))
+
 ## [0.6.0](https://github.com/bingtsingw/mrm-preset/compare/0.5.0...0.6.0) (2022-09-03)
 
 
