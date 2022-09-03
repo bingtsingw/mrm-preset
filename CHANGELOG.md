@@ -1,5 +1,18 @@
 
 
+## [0.6.0](https://github.com/bingtsingw/mrm-preset/compare/0.5.0...0.6.0) (2022-09-03)
+
+
+### Features
+
+* add alias-adonis-package ([e361710](https://github.com/bingtsingw/mrm-preset/commit/e361710da03b4a19aff7760bea00a4a41fe150fb))
+* update gitignore template ([c501538](https://github.com/bingtsingw/mrm-preset/commit/c501538ef2e4d0a0ade55703e680f462f0f4be81))
+
+
+### Bug Fixes
+
+* small fix ([d801b0a](https://github.com/bingtsingw/mrm-preset/commit/d801b0abf42f2b690cefb419055a61c5fb046de7))
+
 ## [0.5.0](https://github.com/bingtsingw/mrm-preset/compare/0.4.0...0.5.0) (2022-08-24)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@bingtsingw/mrm-preset",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Common tasks for Mrm",
   "main": "config.json",
   "keywords": [
