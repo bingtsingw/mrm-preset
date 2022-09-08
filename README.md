@@ -24,6 +24,12 @@ Add script to package.json file
 }
 ```
 
+Or use only one command
+
+```
+$ ni mrm @bingtsingw/mrm-preset -D && jq '.scripts += { mrm: "mrm --preset=@bingtsingw/mrm-preset" }' package.json > package.tmp && mv package.tmp package.json
+```
+
 ## Tasks
 
 ### MIT License

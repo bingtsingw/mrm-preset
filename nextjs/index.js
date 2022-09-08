@@ -1,13 +1,14 @@
-const { install, packageJson } = require('mrm-core');
+const { install, packageJson, deleteFiles } = require('mrm-core');
 
 const task = async () => {
+  deleteFiles(['public/vercel.svg', 'styles', 'pages']);
+
   packageJson()
-    .set('eslintConfig', {
-      extends: ['next/core-web-vitals', 'alloy', 'alloy/react', 'alloy/typescript'],
-    })
+    .merge({ eslintConfig: { extends: ['next/core-web-vitals'] } })
     .save();
 
-  install(['eslint-config-alloy']);
+  install(['axios', 'lodash', 'class-transformer', 'reflect-metadata', '@tanstack/react-query'], { dev: false });
+  install(['@types/lodash']);
 };
 
 module.exports.description = 'Config nextjs project';

@@ -2,17 +2,20 @@
 dist
 build
 out
-deploy_versions
 node_modules
+next-env.d.ts
+deploy_versions
 .temp
 .rn_temp
 .eslintcache
+*.tsbuildinfo
 .stylelintcache
-.build
 .next
 .nuxt
-.malagu
+.build
 .cache
+.vercel
+.malagu
 
 # Logs
 logs
