@@ -1,6 +1,5 @@
-const { install, packageJson, json, deleteFiles, template } = require('mrm-core');
+const { install, packageJson, json, deleteFiles } = require('mrm-core');
 const { cosmiconfig, hasLintStaged } = require('../utils');
-const { join } = require('path');
 
 const task = () => {
   deleteFiles(cosmiconfig('eslint'));
@@ -9,6 +8,7 @@ const task = () => {
   json('.vscode/settings.json')
     .merge({
       'editor.codeActionsOnSave': { 'source.fixAll.eslint': true },
+      'eslint.validate': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue'],
       'eslint.alwaysShowStatus': true,
     })
     .save();
@@ -18,7 +18,7 @@ const task = () => {
   packageJson()
     .setScript('lint:js', 'eslint . --cache --ext .js,.jsx,.ts,.tsx')
     .setScript('lint:js:fix', 'eslint . --cache --ext .js,.jsx,.ts,.tsx --fix')
-    .merge({ eslintIgnore: ['dist', 'build'] })
+    .merge({ eslintIgnore: ['dist', 'build', 'out'] })
     .save();
 
   if (hasLintStaged()) {

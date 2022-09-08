@@ -42,11 +42,17 @@ const prettierConfig = () => ({
 
 const hasHusky = () => !!packageJson().get('devDependencies.husky');
 
+const hasEslint = () => !!packageJson().get('devDependencies.eslint');
+
 const hasPrettier = () => !!packageJson().get('devDependencies.prettier');
 
 const hasTypescript = () => !!packageJson().get('devDependencies.typescript');
 
 const hasLintStaged = () => !!packageJson().get('devDependencies.lint-staged');
+
+const hasReact = () => !!packageJson().get('dependencies.react');
+
+const hasVue = () => !!packageJson().get('dependencies.vue');
 
 module.exports = {
   capitalizeFirstLetter,
@@ -54,7 +60,10 @@ module.exports = {
   cosmiconfig,
   prettierConfig,
   hasHusky,
+  hasEslint,
   hasPrettier,
   hasTypescript,
   hasLintStaged,
+  hasReact,
+  hasVue,
 };
