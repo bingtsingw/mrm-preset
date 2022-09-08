@@ -15,7 +15,7 @@ const task = async () => {
     .set('commitlint', { extends: ['@commitlint/config-conventional'] })
     .save();
 
-  if (hasHusky) {
+  if (hasHusky()) {
     const commitMsg = '.husky/commit-msg';
 
     await execa(`npx husky add ${commitMsg}`, { shell: true });

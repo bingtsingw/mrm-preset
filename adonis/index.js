@@ -1,5 +1,4 @@
-const { install, deleteFiles, lines, packageJson } = require('mrm-core');
-const { cosmiconfig, hasHusky, removeMatch } = require('../utils');
+const { install, packageJson } = require('mrm-core');
 
 const task = async () => {
   packageJson()

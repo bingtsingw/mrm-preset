@@ -30,7 +30,7 @@ const task = async () => {
     })
     .save();
 
-  if (hasPrettier) {
+  if (hasPrettier()) {
     install(['prettier-plugin-prisma']);
     prettierConfig()
       .merge({ plugins: ['prettier-plugin-prisma'] })

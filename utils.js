@@ -40,13 +40,13 @@ const prettierConfig = () => ({
   save: packageJson().save,
 });
 
-const hasHusky = !!packageJson().get('devDependencies.husky');
+const hasHusky = () => !!packageJson().get('devDependencies.husky');
 
-const hasPrettier = !!packageJson().get('devDependencies.prettier');
+const hasPrettier = () => !!packageJson().get('devDependencies.prettier');
 
-const hasTypescript = !!packageJson().get('devDependencies.typescript');
+const hasTypescript = () => !!packageJson().get('devDependencies.typescript');
 
-const hasLintStaged = !!packageJson().get('devDependencies.lint-staged');
+const hasLintStaged = () => !!packageJson().get('devDependencies.lint-staged');
 
 module.exports = {
   capitalizeFirstLetter,

@@ -10,7 +10,7 @@ const task = async () => {
 
   packageJson().merge({ 'lint-staged': {} }).save();
 
-  if (hasHusky) {
+  if (hasHusky()) {
     const preCommit = '.husky/pre-commit';
 
     await execa(`npx husky add ${preCommit}`, { shell: true });

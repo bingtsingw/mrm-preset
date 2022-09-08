@@ -12,7 +12,7 @@ const task = () => {
   install(['prettier']);
   packageJson().setScript('format', 'prettier . --check').setScript('format:fix', 'prettier . --write').save();
 
-  if (hasLintStaged) {
+  if (hasLintStaged()) {
     packageJson()
       .merge({
         'lint-staged': {
@@ -31,7 +31,7 @@ const task = () => {
     })
     .save();
 
-  if (hasTypescript) {
+  if (hasTypescript()) {
     install(['prettier-plugin-organize-imports']);
     prettierConfig()
       .merge({ plugins: ['prettier-plugin-organize-imports'] })

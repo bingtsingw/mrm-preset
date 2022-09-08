@@ -21,7 +21,7 @@ const task = () => {
     .merge({ eslintIgnore: ['dist', 'build'] })
     .save();
 
-  if (hasLintStaged) {
+  if (hasLintStaged()) {
     packageJson()
       .merge({
         'lint-staged': {
