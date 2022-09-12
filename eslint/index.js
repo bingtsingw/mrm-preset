@@ -16,6 +16,7 @@ const task = () => {
   install(['eslint']);
 
   packageJson()
+    .removeScript('lint')
     .setScript('lint:js', 'eslint . --cache --ext .js,.jsx,.ts,.tsx')
     .setScript('lint:js:fix', 'eslint . --cache --ext .js,.jsx,.ts,.tsx --fix')
     .merge({ eslintIgnore: ['dist', 'build', 'out'] })
