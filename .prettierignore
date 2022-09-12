@@ -20,6 +20,7 @@ CHANGELOG.md
 build
 coverage
 dist
+.next
 .umi
 .umi-test
 .umi-production

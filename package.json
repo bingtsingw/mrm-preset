@@ -22,29 +22,37 @@
     "mrm-core": "^7.1.0"
   },
   "devDependencies": {
-    "@bingtsingw/mrm-preset": "^0.4.0",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@babel/core": "^7.19.0",
+    "@babel/eslint-parser": "^7.18.9",
+    "@bingtsingw/mrm-preset": "^0.8.0",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@release-it/conventional-changelog": "^5.1.0",
     "@types/node": "^18.7.16",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.23.0",
+    "eslint-config-alloy": "^4.6.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "mrm": "^4.1.0",
     "prettier": "^2.7.1",
-    "release-it": "^15.3.0"
+    "release-it": "^15.4.1"
   },
   "scripts": {
     "mrm": "mrm --preset=@bingtsingw/mrm-preset",
-    "format": "prettier --check .",
-    "format:fix": "prettier --write .",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
     "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
     "commit": "cz",
-    "release": "release-it"
+    "release": "release-it",
+    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
   },
   "lint-staged": {
-    "**/*.{js,ts,html,css,md,json}": "prettier --check"
+    "**/*.{js,ts,html,css,md,json}": "prettier --check",
+    "**/*.{js,jsx,ts,tsx,html,css,md,json}": "prettier --check",
+    "**/*.{js,jsx,ts,tsx}": "eslint"
   },
   "config": {
     "commitizen": {
@@ -54,6 +62,22 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "proseWrap": "never"
+  },
+  "eslintIgnore": [
+    "dist",
+    "build",
+    "out"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "alloy"
     ]
   }
 }
