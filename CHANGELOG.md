@@ -1,5 +1,24 @@
 
 
+## [0.8.0](https://github.com/bingtsingw/mrm-preset/compare/0.7.0...0.8.0) (2022-09-12)
+
+
+### Features
+
+* add alloy support ([0e94711](https://github.com/bingtsingw/mrm-preset/commit/0e947111fb6e881a599084715522fb6ac4ff5707))
+* add tailwindcss support ([d670354](https://github.com/bingtsingw/mrm-preset/commit/d670354730ba46aa0d65a1aeb86a0d55f5650010))
+* update next script ([bd25917](https://github.com/bingtsingw/mrm-preset/commit/bd25917e3db9ff5062d59ccaaabb966310c72b91))
+
+
+### Bug Fixes
+
+* util detectors use function instead of constant to implement real time check ([0c253dc](https://github.com/bingtsingw/mrm-preset/commit/0c253dc3909446c005cbd6fcc95a1dfbca605fd1))
+
+
+### Chores
+
+* add @types/node ([c75635e](https://github.com/bingtsingw/mrm-preset/commit/c75635e8c596816f78fab9c5a768380096aec0aa))
+
 ## [0.7.0](https://github.com/bingtsingw/mrm-preset/compare/0.6.0...0.7.0) (2022-09-03)
 
 
