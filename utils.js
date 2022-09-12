@@ -5,8 +5,7 @@ function capitalizeFirstLetter(string) {
 }
 
 const removeMatch = (lines, match) => {
-  lines = lines.filter((value) => !value.match(match));
-  return lines;
+  return lines.filter((value) => !value.match(match));
 };
 
 const cosmiconfig = (name) => {

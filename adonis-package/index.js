@@ -1,4 +1,4 @@
-const { ini, deleteFiles, install, packageJson } = require('mrm-core');
+const { install, packageJson } = require('mrm-core');
 const { capitalizeFirstLetter } = require('../utils');
 
 const task = () => {

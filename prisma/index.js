@@ -20,7 +20,7 @@ const task = async () => {
 
   const diff = 'prisma/diff.sh';
   template(diff, join(__dirname, '../templates/prisma/diff.sh')).apply().save();
-  chmodSync(diff, 0755);
+  chmodSync(diff, 0o755);
 
   json('.vscode/settings.json')
     .merge({

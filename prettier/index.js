@@ -1,4 +1,4 @@
-const { install, packageJson, lines, json, deleteFiles, template } = require('mrm-core');
+const { install, packageJson, json, deleteFiles, template } = require('mrm-core');
 const { cosmiconfig, hasTypescript, hasLintStaged, prettierConfig } = require('../utils');
 const { join } = require('path');
 
