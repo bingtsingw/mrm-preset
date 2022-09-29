@@ -1,8 +1,8 @@
 {
   "aliases": {
-    "alias-adonis": ["alias-base", "prisma", "adonis"],
+    "alias-adonis": ["alias-base", "prisma", "malagu", "adonis"],
     "alias-self": ["mit", "release-it", "alias-base", "alloy"],
-    "alias-nextjs": ["typescript", "alias-base", "alloy", "tailwind", "nextjs"],
+    "alias-nextjs": ["typescript", "alias-base", "alloy", "tailwind", "malagu", "nextjs"],
     "alias-adonis-package": ["typescript", "mit", "release-it", "alias-base", "adonis-package"],
     "alias-base": ["editorconfig", "gitignore", "vscode", "husky", "lint-staged", "commitizen", "prettier", "eslint"]
   }
