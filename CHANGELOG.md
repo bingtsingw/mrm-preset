@@ -1,5 +1,28 @@
 
 
+## [0.9.0](https://github.com/bingtsingw/mrm-preset/compare/0.8.0...0.9.0) (2022-09-29)
+
+
+### Features
+
+* add task malagu ([6893299](https://github.com/bingtsingw/mrm-preset/commit/68932998211ddf3018532641bc6cb83e1fd5e5c5))
+
+
+### Bug Fixes
+
+* update gitignore ([33615e8](https://github.com/bingtsingw/mrm-preset/commit/33615e8e605ab81251a96e122a6b9f5bd24a97a2))
+
+
+### Styles
+
+* nr lint:js ([3b2ae15](https://github.com/bingtsingw/mrm-preset/commit/3b2ae1583606e83d2dc1b62916a3cdfe05b9d9ad))
+
+
+### Chores
+
+* add alias-self and manage this project with alias-self ([8856bdf](https://github.com/bingtsingw/mrm-preset/commit/8856bdfda2bb8e308a6f7c0b214eb9ffc5849cb4))
+* update deps ([989d18e](https://github.com/bingtsingw/mrm-preset/commit/989d18ef77290840e483a444db000d9e4003a004))
+
 ## [0.8.0](https://github.com/bingtsingw/mrm-preset/compare/0.7.0...0.8.0) (2022-09-12)
 
 
