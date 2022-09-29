@@ -1,5 +1,12 @@
 
 
+## [0.9.1](https://github.com/bingtsingw/mrm-preset/compare/0.9.0...0.9.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* remove prisma command in malagu task ([6ea0c3f](https://github.com/bingtsingw/mrm-preset/commit/6ea0c3f042c1e6b3e51e1e7d351eaa1b57542109))
+
 ## [0.9.0](https://github.com/bingtsingw/mrm-preset/compare/0.8.0...0.9.0) (2022-09-29)
 
 
