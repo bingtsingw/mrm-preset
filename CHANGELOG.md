@@ -1,5 +1,15 @@
 
 
+## [0.10.0](https://github.com/bingtsingw/mrm-preset/compare/0.9.1...0.10.0) (2022-11-19)
+
+
+### Features
+
+* add prettier-plugin-packagejson ([a23d5d1](https://github.com/bingtsingw/mrm-preset/commit/a23d5d1aecc6263f9bafc28befc4e4351f0c0c2f))
+* add tarojs preset ([64ac232](https://github.com/bingtsingw/mrm-preset/commit/64ac2320724cb6bd4ecf40210e550b3ace109a59))
+* eslint add overrides ([cb4e202](https://github.com/bingtsingw/mrm-preset/commit/cb4e202b44b3315a89f4427d8888da009a890111))
+* upgrade self ([aa9ceae](https://github.com/bingtsingw/mrm-preset/commit/aa9ceae42be5ef9e7c0edbf3131db3443d50001a))
+
 ## [0.9.1](https://github.com/bingtsingw/mrm-preset/compare/0.9.0...0.9.1) (2022-09-29)
 
 
