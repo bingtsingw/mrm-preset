@@ -9,7 +9,7 @@ const task = () => {
 
   json('.vscode/settings.json').merge({ 'editor.defaultFormatter': 'esbenp.prettier-vscode' }).save();
 
-  install(['prettier']);
+  install(['prettier', 'prettier-plugin-packagejson']);
   packageJson().setScript('format', 'prettier . --check').setScript('format:fix', 'prettier . --write').save();
 
   if (hasLintStaged()) {
@@ -29,6 +29,10 @@ const task = () => {
       trailingComma: 'all',
       proseWrap: 'never',
     })
+    .save();
+
+  prettierConfig()
+    .merge({ plugins: ['prettier-plugin-packagejson'] })
     .save();
 
   if (hasTypescript()) {
