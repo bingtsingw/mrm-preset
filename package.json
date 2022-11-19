@@ -2,52 +2,31 @@
   "name": "@bingtsingw/mrm-preset",
   "version": "0.9.1",
   "description": "Common tasks for Mrm",
-  "main": "config.json",
   "keywords": [
     "mrm",
     "mrm-task",
     "mrm-preset"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "license": "MIT",
   "author": {
     "name": "bingtsingw",
     "url": "https://github.com/bingtsingw"
   },
-  "license": "MIT",
-  "dependencies": {
-    "execa": "^6.1.0",
-    "git-user-name": "^2.0.0",
-    "mrm-core": "^7.1.6"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "@babel/eslint-parser": "^7.19.1",
-    "@bingtsingw/mrm-preset": "^0.8.0",
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "@release-it/conventional-changelog": "^5.1.0",
-    "@types/node": "^18.7.23",
-    "commitizen": "^4.2.5",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.24.0",
-    "eslint-config-alloy": "^4.7.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "mrm": "^4.1.6",
-    "prettier": "^2.7.1",
-    "release-it": "^15.4.2"
-  },
+  "main": "config.json",
   "scripts": {
-    "mrm": "mrm --preset=@bingtsingw/mrm-preset",
+    "commit": "cz",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
-    "commit": "cz",
-    "release": "release-it",
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
-    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
+    "mrm": "mrm --preset=@bingtsingw/mrm-preset",
+    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
+    "release": "release-it"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "**/*.{js,ts,html,css,md,json}": "prettier --check",
@@ -59,25 +38,61 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "prettier": {
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ],
     "printWidth": 120,
+    "proseWrap": "never",
     "singleQuote": true,
-    "trailingComma": "all",
-    "proseWrap": "never"
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "alloy"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.config.js"
+        ],
+        "rules": {
+          "@typescript-eslint/no-require-imports": "off",
+          "import/no-commonjs": "off"
+        }
+      }
+    ]
   },
   "eslintIgnore": [
     "dist",
     "build",
     "out"
   ],
-  "eslintConfig": {
-    "extends": [
-      "alloy"
-    ]
+  "dependencies": {
+    "execa": "^6.1.0",
+    "git-user-name": "^2.0.0",
+    "mrm-core": "^7.1.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@bingtsingw/mrm-preset": "^0.9.1",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/node": "^18.11.9",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-alloy": "^4.7.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "mrm": "^4.1.13",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "release-it": "^15.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
