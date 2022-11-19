@@ -31,6 +31,22 @@ const task = () => {
       })
       .save();
   }
+
+  packageJson()
+    .merge({
+      eslintConfig: {
+        overrides: [
+          {
+            files: ['*.config.js'],
+            rules: {
+              'import/no-commonjs': 'off',
+              '@typescript-eslint/no-require-imports': 'off',
+            },
+          },
+        ],
+      },
+    })
+    .save();
 };
 
 task.description = 'Add eslint';
