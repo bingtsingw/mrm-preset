@@ -69,28 +69,28 @@
     "out"
   ],
   "dependencies": {
-    "execa": "^6.1.0",
+    "execa": "^8.0.1",
     "git-user-name": "^2.0.0",
-    "mrm-core": "^7.1.13"
+    "mrm-core": "^7.1.22"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
-    "@babel/eslint-parser": "^7.19.1",
-    "@bingtsingw/mrm-preset": "^0.9.1",
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "@types/node": "^18.11.9",
-    "commitizen": "^4.2.5",
+    "@babel/core": "^7.23.7",
+    "@babel/eslint-parser": "^7.23.3",
+    "@bingtsingw/mrm-preset": "workspace:^",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@types/node": "^20.11.1",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.28.0",
-    "eslint-config-alloy": "^4.7.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "mrm": "^4.1.13",
-    "prettier": "^2.7.1",
-    "prettier-plugin-packagejson": "^2.3.0",
-    "release-it": "^15.5.0"
+    "eslint": "^8.56.0",
+    "eslint-config-alloy": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "mrm": "^4.1.22",
+    "prettier": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.9",
+    "release-it": "^17.0.1"
   },
   "publishConfig": {
     "access": "public"
