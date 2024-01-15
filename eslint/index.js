@@ -7,9 +7,8 @@ const task = () => {
 
   json('.vscode/settings.json')
     .merge({
-      'editor.codeActionsOnSave': { 'source.fixAll.eslint': true },
+      'editor.codeActionsOnSave': { 'source.fixAll.eslint': 'explicit' },
       'eslint.validate': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue'],
-      'eslint.alwaysShowStatus': true,
     })
     .save();
 
