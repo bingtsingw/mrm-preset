@@ -1,5 +1,18 @@
 
 
+## [0.10.1](https://github.com/bingtsingw/mrm-preset/compare/0.10.0...0.10.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* small fix ([6f37c90](https://github.com/bingtsingw/mrm-preset/commit/6f37c90863ef1a3ab9b8243e236e7237a2ec6a71))
+
+
+### Chores
+
+* nr mrm alias-self ([96c3c9d](https://github.com/bingtsingw/mrm-preset/commit/96c3c9dfb584fe851372a16c22219db7b7a0867b))
+* upgrade deps ([7caf11f](https://github.com/bingtsingw/mrm-preset/commit/7caf11f85164f6b8207f51766250d7c710e36cbd))
+
 ## [0.10.0](https://github.com/bingtsingw/mrm-preset/compare/0.9.1...0.10.0) (2022-11-19)
 
 
