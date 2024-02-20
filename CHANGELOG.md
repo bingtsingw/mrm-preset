@@ -1,5 +1,12 @@
 
 
+## [0.11.0](https://github.com/bingtsingw/mrm-preset/compare/0.10.1...0.11.0) (2024-02-20)
+
+
+### Features
+
+* update husky to support v9 ([7499328](https://github.com/bingtsingw/mrm-preset/commit/7499328da9b3ccf1a5de8d7783837b1a9525d1c4))
+
 ## [0.10.1](https://github.com/bingtsingw/mrm-preset/compare/0.10.0...0.10.1) (2024-01-15)
 
 
