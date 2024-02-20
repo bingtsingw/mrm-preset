@@ -5,9 +5,9 @@ const task = async () => {
 
   deleteFiles(['.husky']);
 
-  packageJson().setScript('prepare', "if [ -d './node_modules/husky' ]; then husky install; fi").save();
+  packageJson().setScript('prepare', "if [ -d './node_modules/husky' ]; then husky; fi").save();
   install(['husky']);
-  await execa('npx husky install', { shell: true });
+  await execa('npx husky init', { shell: true });
 };
 
 task.description = 'Add husky';
