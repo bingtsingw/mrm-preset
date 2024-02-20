@@ -1,5 +1,12 @@
 
 
+## [0.11.1](https://github.com/bingtsingw/mrm-preset/compare/0.11.0...0.11.1) (2024-02-20)
+
+
+### Bug Fixes
+
+* remove husky add ([ec32d96](https://github.com/bingtsingw/mrm-preset/commit/ec32d96815a281529aa64e2ad02f4962b9f1e5bc))
+
 ## [0.11.0](https://github.com/bingtsingw/mrm-preset/compare/0.10.1...0.11.0) (2024-02-20)
 
 
